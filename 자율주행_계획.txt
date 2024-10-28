@@ -1,0 +1,25 @@
+동아리 자율주행 계획
+
+def sense() {
+ for 90 times {
+  while(distance < 한계값){
+   turn(right, 1d)
+  }
+ }
+ if(distance < 한계값){
+  for 180 times {
+   while(distance < 한계값) {
+    turn(left, 1d)
+   }
+  }
+ }
+}
+
+start
+while(True){
+ til(distance > 한계값) {
+  go(front)
+ }
+ sense()
+}
+end
